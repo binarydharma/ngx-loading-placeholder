@@ -1,0 +1,94 @@
+.pulsing {
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: $g-6;
+    }
+    50% {
+      background-color: $g-4;
+    }
+    100% {
+      background-color: $g-6;
+    }
+}
+
+///////////////////////////////////////////////
+
+.placeholder {
+    @extend .pulsing;
+    color: transparent;
+    display: inline-block;
+}
+  
+.placeholder:after {
+content: "yoyoyoyoyoy";
+}
+
+.placeholderChildren {
+pointer-events: none;
+
+h1,
+.h1,
+h2,
+.h2,
+.h3,
+h3,
+h4,
+.h4,
+.h5,
+h5,
+h6,
+p,
+label,
+button,
+textarea,
+.specialPlaceholder,
+.multiselect-dropdown,
+.openObject {
+    @extend .pulsing;
+    color: transparent !important;
+    border-radius: 0px !important;
+    border-width: 0px !important;
+    // display: inline-block;
+
+    > *,
+    .forcedHide,
+    fa-icon {
+    display: none !important;
+    }
+}
+
+label::after{
+  content: '' !important;
+}
+
+.specialPlaceholder2{
+    @extend .pulsing;
+    color: transparent !important;
+    border-width: 0px !important;
+    background-image: unset;
+}
+
+.img {
+    background-image: unset !important;
+    @extend .pulsing;
+}
+
+input[type="radio"],
+fa-icon,
+.forcedHide {
+    display: none !important;
+}
+
+// ,h2,h3,h4,h5,h6,label
+
+// h1,h2,h3,h4,h5,h6,label:after{
+//     content: 'yoyoyoyoyoy';
+// }
+}
+
+.notPlaceholder{
+animation: none;
+}
