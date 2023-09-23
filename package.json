@@ -1,11 +1,14 @@
 {
   "name": "ngx-loading-placeholder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Angular Component to show loading UI.",
   "author": {
     "name": "Vassudeo Shetye",
     "email": "vassudeo.shetye@binarydharma.online",
     "url": "https://binarydharma.online"
+  },
+  "repository": {
+    
   },
   "peerDependencies": {
     "@angular/common": "^12.2.0",

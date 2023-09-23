@@ -1,16 +1,19 @@
+$color1: #6f7c80;
+$color2: #bdbdbd;
+
 .pulsing {
     animation: pulse 2s infinite ease-in-out;
   }
   
   @keyframes pulse {
     0% {
-      background-color: $g-6;
+      background-color: $color1;
     }
     50% {
-      background-color: $g-4;
+      background-color: $color2;
     }
     100% {
-      background-color: $g-6;
+      background-color: $color1;
     }
 }
 
