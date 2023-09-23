@@ -22,6 +22,10 @@ Add `LoadingPlaceholder` directive to any container and activate it via boolean.
 </div>
 ```
 
+## Upcoming Changes
+- Ability to Change Color
+- Angular Schematic for Installation
+- Other Animations Options
 
 <!-- Run `ng generate component component-name --project ngx-loading-placeholder` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-loading-placeholder`.
 > Note: Don't forget to add `--project ngx-loading-placeholder` or else it will be added to the default project in your `angular.json` file. 
