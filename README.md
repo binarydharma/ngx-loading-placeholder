@@ -4,10 +4,25 @@ Angular Component to show loading UI.
 
 ## Installation
 
+Using `npm i:`
+
+```
+  npm i ngx-loading-placeholder
+```
+
+add necessary scss to angular.json to get animation:
+
+```
+  styles:[
+    "node_modules/ngx-loading-placeholder/src/style.scss"
+  ],
+  "scripts": []
+```
+
 Using `ng add:`
 
 ```
-ng add binarydharma/ngx-loading-placeholder
+  ng add binarydharma/ngx-loading-placeholder
 ```
 
 ## Usage
@@ -15,17 +30,18 @@ ng add binarydharma/ngx-loading-placeholder
 Add `LoadingPlaceholder` directive to any container and activate it via boolean.
 
 ```
-<div [LoadingPlaceholder]="testbutton">
-  <h2>
-    I am Ready
-  </h2>
-</div>
+  <div [LoadingPlaceholder]="testbutton">
+    <h2>
+      I am Ready
+    </h2>
+  </div>
 ```
 
 ## Upcoming Changes
 - Ability to Change Color
-- Angular Schematic for Installation
 - Other Animations Options
+- Add timing functionality
+- Directives for additional features
 
 <!-- Run `ng generate component component-name --project ngx-loading-placeholder` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-loading-placeholder`.
 > Note: Don't forget to add `--project ngx-loading-placeholder` or else it will be added to the default project in your `angular.json` file. 

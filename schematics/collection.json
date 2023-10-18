@@ -1,0 +1,9 @@
+{
+    "$schema":"../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add":{
+            "description": "Setups styles necessary for placeholder.",
+            "factory": "./ng-add/index#ngAdd"
+        }
+    }
+}

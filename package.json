@@ -1,15 +1,30 @@
 {
   "name": "ngx-loading-placeholder",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "Angular Component to show loading UI.",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematic.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/ngx-loading-placeholder/"
+  },
   "author": {
     "name": "Vassudeo Shetye",
     "email": "vassudeo.shetye@binarydharma.online",
     "url": "https://binarydharma.online"
   },
-  "repository": {
-    
+  "ng-add":{
+    "save": "true"
   },
+  "schematics":"./schematics/collection.json",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binarydharma/ngx-loading-placeholder"
+  },
+  "keywords": [
+    "Angular","library","loading","pulsing","Angular 2"
+  ],
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
